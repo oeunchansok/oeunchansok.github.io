@@ -55,13 +55,13 @@ h3{
     padding: 15px;
 }
 .footer{
-    height: 10vh;
-    background: #d1c0c0;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 10vh;
+    background-color: #d1c0c0;
 
-    }
+}
 @media only screen and (max-width: 768px){
     img{
        width: 20%;
