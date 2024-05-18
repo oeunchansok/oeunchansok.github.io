@@ -30,14 +30,6 @@ body{
     align-content: stretch;
     justify-content: center;
 }
-    /* display: flex;
-    color: white;
-    height: 50vh;
-    background: #11e7e0;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center; */
-
 
 img{
     width: 15%;
@@ -60,14 +52,12 @@ h3{
     align-items: center;
     height: 10vh;
     background-color: #d1c0c0;
-
 }
 @media only screen and (max-width: 768px){
     img{
        width: 20%;
         
     }
-
 }
 @media only screen and (max-width: 540px){
     .header{
