@@ -54,14 +54,14 @@ h3{
 .row{
     padding: 15px;
 }
-.footer{
+/* .footer{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 10vh;
     background-color: #d1c0c0;
 
-}
+} */
 @media only screen and (max-width: 768px){
     img{
        width: 20%;
