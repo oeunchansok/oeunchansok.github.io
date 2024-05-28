@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      form{       
+        padding:40px  25px;
+        width: 40%;
+        margin: auto;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      }  
+      input {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        }
+        button{
+            border: none;
+            border-radius: 10px;
+            padding: 10px 20px;
+            margin: auto;
+            display: flex;
+            justify-content: end;
+            background: rgb(23, 96, 206);
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <p>Welcome back,</p>
+        <p>Pleasee login to your admin acount.</p>
+        <p>Use Name : login , password = 12345678</p>
+        <label for="fname">Usename</label>
+        <input type="text" id="usename" name="usename">
+        <label for="lname">Password</label>
+        <input type="password" id="password" name="password">
+        <button id="button">login</button>
+    </form>
+    
+</body>
+<script>
+    var btn = document.getElementById('button');
+    btn.addEventListener("click", function() {
+        var usename = document.getElementById("usename").value;
+        var password = document.getElementById("password").value;
+        
+        if(usename == "login" && password == 12345678) {
+            alert ("Login successfully");
+            window.location = "https://oeunchansok.github.io/Assignment03/List";
+             
+        } else if(usename !== "login" && password !== 12345678) {
+            alert('Not correct Use name or password')
+        } else {
+            alert( 'please input file')
+        } 
+        
+    });
+</script>
+</html>
