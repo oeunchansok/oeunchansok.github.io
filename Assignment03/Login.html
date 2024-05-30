@@ -34,8 +34,38 @@
         <p>Welcome back,</p>
         <p>Pleasee login to your admin acount.</p>
         <p>Use Name : login , password = 12345678</p>
-        <label for="fname">Usename</label>
-        <input type="text" id="usename" name="usename">
+        <label for="fname">Username</label>
+        <input type="text" id="username" name="username">
+        <label for="lname">Password</label>
+        <input type="password" id="password" name="password">
+        <button id="button" type="button">login</button>
+    </form>
+    <a href=""></a>
+</body>
+<script>
+    var btn = document.getElementById('button');
+    btn.addEventListener("click", function(event) {
+        event.preventDefault();
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+
+        if(username === "login" && password === "12345678") {
+            alert("Login successfully");
+            location.href = "https://oeunchansok.github.io/Assignment03/List";
+        } else if(username !== "login" || password !== "12345678") {
+            alert('Not correct Use name or password');
+        } else {
+            alert('Please input all fields');
+        }
+    });
+</script>
+<!-- <body>
+    <form action="">
+        <p>Welcome back,</p>
+        <p>Pleasee login to your admin acount.</p>
+        <p>Use Name : login , password = 12345678</p>
+        <label for="fname">Username</label>
+        <input type="text" id="username" name="username">
         <label for="lname">Password</label>
         <input type="password" id="password" name="password">
         <button id="button">login</button>
@@ -46,19 +76,18 @@
 <script>
     var btn = document.getElementById('button');
     btn.addEventListener("click", function() {
-        var usename = document.getElementById("usename").value;
+        var username = document.getElementById("username").value;
         var password = document.getElementById("password").value;
         
-        if(usename == "login" && password == 12345678) {
+        if(username == "login" && password == 12345678) {
             alert ("Login successfully");
-            window.location.href = "https://oeunchansok.github.io/Assignment03/List";
-             
-        } else if(usename !== "login" && password !== 12345678) {
+            location.href = "https://oeunchansok.github.io/Assignment03/List";
+        } else if(username !== "login" && password !== 12345678) {
             alert('Not correct Use name or password')
         } else {
             alert( 'please input file')
         } 
         
     });
-</script>
+</script> -->
 </html>
