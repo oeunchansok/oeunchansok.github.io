@@ -1,0 +1,2 @@
+1) Consider the project name.
+2) List features (modules)
