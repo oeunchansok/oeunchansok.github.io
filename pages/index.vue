@@ -42,9 +42,6 @@
           <p class="text-lg text-gray-700">
             I value simplicity, respect, kindness, and continuous growth 🌱.
           </p>
-          <p class="text-lg text-gray-700">
-            I value simplicity, respect, kindness, and continuous growth 🌱.
-          </p>
           <NuxtLink to="/about" class="inline-block mt-4 text-blue-600 hover:underline font-semibold">Learn more →</NuxtLink>
         </div>
       </div>
